@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CACHICAMO STUDIOS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('cachicamo-landing.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      animation: glitchBackground 5s infinite alternate ease-in-out;
+    }
+
+    a img.barcode {
+      width: 300px;
+      opacity: 0;
+      transform: scale(0.95);
+      animation: fadeInZoom 1.2s ease forwards;
+    }
+
+    a img.barcode:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInZoom {
+      0% {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes glitchBackground {
+      0% {
+        filter: hue-rotate(0deg) brightness(1);
+      }
+      25% {
+        filter: hue-rotate(10deg) brightness(1.05);
+      }
+      50% {
+        filter: hue-rotate(-10deg) brightness(0.95);
+      }
+      75% {
+        filter: hue-rotate(20deg) brightness(1.1);
+      }
+      100% {
+        filter: hue-rotate(0deg) brightness(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="mailto:info@cachicamo.studio" title="Escríbenos">
+    <img class="barcode" src="barcode-cachicamo.png" alt="Cachicamo Studios barcode">
+  </a>
+</body>
+</html>
