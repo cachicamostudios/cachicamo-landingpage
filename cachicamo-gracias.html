@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gracias - CACHICAMO STUDIOS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Share Tech Mono', monospace;
+      background: url('cachicamo-landing.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .message-box {
+      background-color: rgba(0, 255, 247, 0.95);
+      padding: 2rem;
+      border-radius: 16px;
+      text-align: center;
+      max-width: 480px;
+      margin: 2rem;
+      box-shadow: 0 0 15px #b8fc26;
+      animation: glitch-box 1.5s infinite alternate ease-in-out;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #fffb00;
+      animation: glitch-text 2s infinite ease-in-out;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #e0e0e0;
+      margin-bottom: 2rem;
+    }
+
+    .button {
+      background-color: #b8fc26;
+      color: #000;
+      border: none;
+      border-radius: 20px;
+      padding: 0.6rem 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ff00ff;
+      color: #000;
+    }
+
+    @keyframes glitch-box {
+      0% { transform: translate(0, 0); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(2px, -1px); }
+      60% { transform: translate(-1px, 1px); }
+      80% { transform: translate(1px, -2px); }
+      100% { transform: translate(0, 0); }
+    }
+
+    @keyframes glitch-text {
+      0%, 100% { text-shadow: -2px 0 magenta, 2px 0 cyan; }
+      50% { text-shadow: 2px 0 magenta, -2px 0 cyan; }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 0.95rem;
+      }
+      .button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="message-box">
+    <h1>¡Gracias por tu mensaje!</h1>
+    <p>Lo hemos recibido con éxito. Pronto nos pondremos en contacto contigo.</p>
+    <a href="https://cachicamo.studio" class="button">Volver al sitio</a>
+  </div>
+</body>
+</html>
