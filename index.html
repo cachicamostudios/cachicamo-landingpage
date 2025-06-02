@@ -4,8 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#000000" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <title>CACHICAMO STUDIOS</title>
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <style>
@@ -48,7 +46,7 @@
       max-width: 360px;
       width: 90%;
       font-size: 0.9rem;
-      color: #ff00ff;
+      color: #5a007d;
       box-shadow: 0 0 15px #b8fc26;
     }
 
@@ -65,7 +63,7 @@
 
     form input, form textarea {
       background-color: #0f0f0f;
-      color: #ff00ff;
+      color: #5a007d;
       border: 1px solid #b8fc26;
       border-radius: 4px;
       padding: 0.4rem;
@@ -144,13 +142,10 @@
   </style>
 </head>
 <body>
-
-  <!-- Código de barras -->
   <a onclick="toggleForm()">
     <img class="barcode" src="barcode-cachicamo.png" alt="Cachicamo Studios barcode">
   </a>
 
-  <!-- Formulario oculto -->
   <div id="formContainer">
     <form action="https://formspree.io/f/xkgbnjpr" method="POST">
       <label for="email">Email</label>
@@ -170,6 +165,5 @@
       form.classList.toggle('show');
     }
   </script>
-
 </body>
 </html>
